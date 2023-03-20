@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* product_pack
+#	* product_pack
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2019-12-12 22:05+0000\n"
+"PO-Revision-Date: 2020-06-30 16:19+0000\n"
 "Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>\n"
 "Language-Team: none\n"
 "Language: pt\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 3.10\n"
 
 #. module: product_pack
 #: model:ir.model.fields,field_description:product_pack.field_product_pack_line__create_uid
@@ -27,20 +27,17 @@ msgid "Created on"
 msgstr "Criado em"
 
 #. module: product_pack
-#: model:ir.model.fields.selection,name:product_pack.selection__product_template__pack_type__detailed
+#: selection:product.template,pack_type:0
 msgid "Detailed"
 msgstr "Detalhado"
 
 #. module: product_pack
-#: model:ir.model.fields.selection,name:product_pack.selection__product_template__pack_component_price__detailed
+#: selection:product.template,pack_component_price:0
 msgid "Detailed per component"
 msgstr "Detalhado por componente"
 
 #. module: product_pack
 #: model:ir.model.fields,field_description:product_pack.field_product_pack_line__display_name
-#: model:ir.model.fields,field_description:product_pack.field_product_pricelist__display_name
-#: model:ir.model.fields,field_description:product_pack.field_product_product__display_name
-#: model:ir.model.fields,field_description:product_pack.field_product_template__display_name
 msgid "Display Name"
 msgstr "Nome a Exibir"
 
@@ -52,24 +49,19 @@ msgstr "Pertencente a packs"
 
 #. module: product_pack
 #: model:ir.model.fields,field_description:product_pack.field_product_pack_line__id
-#: model:ir.model.fields,field_description:product_pack.field_product_pricelist__id
-#: model:ir.model.fields,field_description:product_pack.field_product_product__id
-#: model:ir.model.fields,field_description:product_pack.field_product_template__id
 msgid "ID"
 msgstr "ID"
 
 #. module: product_pack
 #: model:ir.model.fields,help:product_pack.field_product_product__pack_modifiable
 #: model:ir.model.fields,help:product_pack.field_product_template__pack_modifiable
-msgid ""
-"If you check this field yo will be able to edit sale/purchase order line "
-"relate to its component"
+msgid "If you check this field yo will be able to edit sale/purchase order line relate to its component"
 msgstr ""
 "Se assinalar este campo, poderá editar linhas de encomendas de compra/venda "
 "relacionadas com o seu componente"
 
 #. module: product_pack
-#: model:ir.model.fields.selection,name:product_pack.selection__product_template__pack_component_price__ignored
+#: selection:product.template,pack_component_price:0
 msgid "Ignored"
 msgstr "Ignorado"
 
@@ -87,9 +79,6 @@ msgstr "É um Pack de Produtos?"
 
 #. module: product_pack
 #: model:ir.model.fields,field_description:product_pack.field_product_pack_line____last_update
-#: model:ir.model.fields,field_description:product_pack.field_product_pricelist____last_update
-#: model:ir.model.fields,field_description:product_pack.field_product_product____last_update
-#: model:ir.model.fields,field_description:product_pack.field_product_template____last_update
 msgid "Last Modified on"
 msgstr "Modif. pela Última Vez em"
 
@@ -104,32 +93,29 @@ msgid "Last Updated on"
 msgstr "Atualiz. pela Última Vez em"
 
 #. module: product_pack
-#: model:ir.model.fields.selection,name:product_pack.selection__product_template__pack_type__non_detailed
+#: selection:product.template,pack_type:0
 msgid "Non Detailed"
 msgstr "Não Detalhado"
 
 #. module: product_pack
 #: model:ir.model.fields,help:product_pack.field_product_product__pack_component_price
 #: model:ir.model.fields,help:product_pack.field_product_template__pack_component_price
-msgid ""
-"On sale orders or purchase orders:\n"
+msgid "On sale orders or purchase orders:\n"
 "* Detailed per component: Detail lines with prices.\n"
-"* Totalized in main product: Detail lines merging lines prices on pack "
-"(don't show component prices).\n"
+"* Totalized in main product: Detail lines merging lines prices on pack (don't show component prices).\n"
 "* Ignored: Use product pack price (ignore detail line prices)."
 msgstr ""
 "Em encomendas de compra ou venda:\n"
 "* Detalhado por componente: Linha de detalhes com preços.\n"
 "* Totalizado no produto principal: Linhas de detalhes fundindo os preços das "
-"linhas no pack (não mostrar preços dos compoenentes).\n"
+"linhas no pack (não mostrar preços dos componentes).\n"
 "* Ignorado: Usar o preço do pack de produtos (ignorar preços das linhas de "
 "detalhes)."
 
 #. module: product_pack
 #: model:ir.model.fields,help:product_pack.field_product_product__pack_type
 #: model:ir.model.fields,help:product_pack.field_product_template__pack_type
-msgid ""
-"On sale orders or purchase orders:\n"
+msgid "On sale orders or purchase orders:\n"
 "* Detailed: Display components individually in the sale order.\n"
 "* Non Detailed: Do not display components individually in the sale order."
 msgstr ""
@@ -167,22 +153,10 @@ msgid "Pack CPU (Non Detailed - Totalized Components Price)"
 msgstr "Pack CPU (Não Detalhado - Preço dos Componentes Totalizado)"
 
 #. module: product_pack
-#: model:ir.model.fields,field_description:product_pack.field_product_product__pack_type
-#: model:ir.model.fields,field_description:product_pack.field_product_template__pack_type
-msgid "Pack Display Type"
-msgstr ""
-
-#. module: product_pack
 #: model:ir.model.fields,field_description:product_pack.field_product_product__pack_modifiable
 #: model:ir.model.fields,field_description:product_pack.field_product_template__pack_modifiable
 msgid "Pack Modifiable"
 msgstr "Pack Modificável"
-
-#. module: product_pack
-#: model:ir.model.fields,field_description:product_pack.field_product_product__pack_modifiable_invisible
-#: model:ir.model.fields,field_description:product_pack.field_product_template__pack_modifiable_invisible
-msgid "Pack Modifiable Invisible"
-msgstr ""
 
 #. module: product_pack
 #: model:product.product,name:product_pack.product_pack_pc_detailed_components
@@ -221,16 +195,22 @@ msgid "Pack Products"
 msgstr "Packs de Produtos"
 
 #. module: product_pack
+#: model:ir.model.fields,field_description:product_pack.field_product_product__pack_type
+#: model:ir.model.fields,field_description:product_pack.field_product_template__pack_type
+msgid "Pack Type"
+msgstr "Tipo de Pack"
+
+#. module: product_pack
 #: model:ir.model.fields,field_description:product_pack.field_product_product__pack_component_price
 #: model:ir.model.fields,field_description:product_pack.field_product_template__pack_component_price
 msgid "Pack component price"
 msgstr "Preço do componente do pack"
 
 #. module: product_pack
-#: code:addons/product_pack/models/product_template.py:0
+#: code:addons/product_pack/models/product_template.py:65
+#: code:addons/product_pack/models/product_template.py:71
 #, python-format
-msgid ""
-"Pack lines products company must be the same as the parent product company"
+msgid "Pack lines products company must be the same as the parent product company"
 msgstr ""
 "A empresa das linhas de produtos dos packs tem que ser a mesma que a do "
 "produto ascendente"
@@ -247,11 +227,6 @@ msgid "Parent Product"
 msgstr "Produto Ascendente"
 
 #. module: product_pack
-#: model:ir.model,name:product_pack.model_product_pricelist
-msgid "Pricelist"
-msgstr ""
-
-#. module: product_pack
 #: model:ir.model,name:product_pack.model_product_product
 #: model:ir.model.fields,field_description:product_pack.field_product_pack_line__product_id
 msgid "Product"
@@ -263,7 +238,7 @@ msgid "Product Template"
 msgstr "Modelo de Produto"
 
 #. module: product_pack
-#: model:ir.model.constraint,message:product_pack.constraint_product_pack_line_product_uniq
+#: sql_constraint:product.pack.line:0
 msgid "Product must be only once on a pack!"
 msgstr "O produto só pode aparecer uma vez no pack!"
 
@@ -284,15 +259,7 @@ msgid "Quantity"
 msgstr "Quantidade"
 
 #. module: product_pack
-#: model:ir.model.fields,help:product_pack.field_product_product__pack_modifiable_invisible
-#: model:ir.model.fields,help:product_pack.field_product_template__pack_modifiable_invisible
-msgid ""
-"Technical field in order to compute the availability of the Pack Modifiable "
-"field"
-msgstr ""
-
-#. module: product_pack
-#: model:ir.model.fields.selection,name:product_pack.selection__product_template__pack_component_price__totalized
+#: selection:product.template,pack_component_price:0
 msgid "Totalized in main product"
 msgstr "Totalizado no produto principal"
 
@@ -311,15 +278,13 @@ msgstr "Totalizado no produto principal"
 #: model:product.template,uom_name:product_pack.product_pack_pc_detailed_components_product_template
 #: model:product.template,uom_name:product_pack.product_pack_pc_detailed_ignored_product_template
 #: model:product.template,uom_name:product_pack.product_pack_pc_detailed_totalized_product_template
-#, fuzzy
-msgid "Units"
+msgid "Unit(s)"
 msgstr "Unidade(s)"
 
 #. module: product_pack
-#: code:addons/product_pack/models/product_pack_line.py:0
+#: code:addons/product_pack/models/product_pack_line.py:49
 #, python-format
-msgid ""
-"You cannot set recursive packs.\n"
+msgid "You cannot set recursive packs.\n"
 "Product id: %s"
 msgstr ""
 "Não pode atribuir pack recursivos.\n"
@@ -330,5 +295,20 @@ msgstr ""
 msgid "You must save first to add pack lines"
 msgstr "Para adicionar linhas de packs, deve primeiro guardar"
 
-#~ msgid "Pack Type"
-#~ msgstr "Tipo de Pack"
+#. module: product_pack
+#: model:product.product,weight_uom_name:product_pack.product_pack_cpu_detailed_components
+#: model:product.product,weight_uom_name:product_pack.product_pack_cpu_detailed_ignored
+#: model:product.product,weight_uom_name:product_pack.product_pack_cpu_detailed_totalized
+#: model:product.product,weight_uom_name:product_pack.product_pack_cpu_non_detailed
+#: model:product.product,weight_uom_name:product_pack.product_pack_pc_detailed_components
+#: model:product.product,weight_uom_name:product_pack.product_pack_pc_detailed_ignored
+#: model:product.product,weight_uom_name:product_pack.product_pack_pc_detailed_totalized
+#: model:product.template,weight_uom_name:product_pack.product_pack_cpu_detailed_components_product_template
+#: model:product.template,weight_uom_name:product_pack.product_pack_cpu_detailed_ignored_product_template
+#: model:product.template,weight_uom_name:product_pack.product_pack_cpu_detailed_totalized_product_template
+#: model:product.template,weight_uom_name:product_pack.product_pack_cpu_non_detailed_product_template
+#: model:product.template,weight_uom_name:product_pack.product_pack_pc_detailed_components_product_template
+#: model:product.template,weight_uom_name:product_pack.product_pack_pc_detailed_ignored_product_template
+#: model:product.template,weight_uom_name:product_pack.product_pack_pc_detailed_totalized_product_template
+msgid "kg"
+msgstr ""
